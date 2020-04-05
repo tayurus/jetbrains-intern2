@@ -3,8 +3,7 @@
 const cors = require('cors');
 var express = require('express'), //собственно, сервер
     app = express(), // объект типа "сервер"
-    bodyParser = require('body-parser'), //модуль, который парсит post-запрос
-    path = require('path');
+    bodyParser = require('body-parser'); //модуль, который парсит post-запрос
 app.use(cors());
 app.options('*', cors());
 // данные
@@ -15,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 //установка пути, где находятся файлы
 app.use(express.static(__dirname));
 
-app.get('/data', function (req, res) {
+app.get('/entries', function (req, res) {
     res.header('Content-Type', 'application/json');
     res.send(JSON.stringify(data));
 });

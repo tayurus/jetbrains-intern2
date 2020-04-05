@@ -1,9 +1,9 @@
-import { combineReducers } from "redux";
+import {combineReducers} from "redux";
 
-import { alert } from "./alert";
+import {entries} from "./entries";
 
 const rootReducer = combineReducers({
-  alert
+    entries
 });
 
 export default rootReducer;

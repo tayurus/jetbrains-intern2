@@ -1,3 +1,20 @@
 .main-page {
+    &__title {
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 30px;
+    }
 
+    .apexcharts-canvas {
+        margin: 0 auto;
+    }
+
+    &__table {
+        margin: 10px auto;
+    }
+
+    &__table-cell {
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
 }
